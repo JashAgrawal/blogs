@@ -19,11 +19,7 @@ const BlogItem = ({
           {blog.title}
         </h1>
         <div className="w-full text-xl px-4"> {blog.body.slice(0, 30)}</div>
-        <div className="w-full flex flex-row-reverse">
-          {/* <span className="text-accent font-bold text-md">
-            By - {blog.author}
-          </span> */}
-        </div>
+        <div className="w-full flex flex-row-reverse"></div>
       </div>
     </Link>
   );

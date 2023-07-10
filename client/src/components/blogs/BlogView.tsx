@@ -4,7 +4,6 @@ import apiClient from "@/services";
 import { methods } from "@/utils/constants";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AiFillDelete } from "react-icons/ai";
 interface propTypes {
   propTitle?: string;
   propBody?: string;
@@ -107,27 +106,18 @@ const BlogView = ({
         className="w-full text-2xl bg-black px-8 py-4 focus:outline-none rounded-xl border-accent thinScroll resize-none"
       />
       <div className="w-full flex justify-end items-center">
-        {!isDisabled ? (
-          <>
-            <button
-              onClick={() => deleteBlog()}
-              className="bg-black rounded-xl h-12 px-8 text-2xl py-2 text-accent"
-            >
-              Delete
-            </button>
-            <button
-              onClick={() => publishBlog()}
-              className="bg-black rounded-xl h-12 px-8 text-2xl py-2 text-accent"
-            >
-              Publish
-            </button>
-          </>
-        ) : (
+        <button
+          onClick={() => deleteBlog()}
+          className="bg-black rounded-xl h-12 px-8 text-2xl py-2 text-accent"
+        >
+          Delete
+        </button>
+        {!isDisabled && (
           <button
-            onClick={() => deleteBlog()}
+            onClick={() => publishBlog()}
             className="bg-black rounded-xl h-12 px-8 text-2xl py-2 text-accent"
           >
-            Delete
+            Publish
           </button>
         )}
       </div>

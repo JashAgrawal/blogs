@@ -6,12 +6,6 @@ const apiClient = async (
   payload?: any | undefined
 ) => {
   try {
-    // const res = await axios[method](
-    //   `http://localhost:3030/api/${url}`,
-    //   payload
-    // );
-    // console.log("x");
-    // return res.data.data;
     const config = {
       method: method,
       headers: {

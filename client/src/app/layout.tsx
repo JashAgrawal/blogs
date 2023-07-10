@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-white bg-black relative noScroll">
+      <body className="text-white bg-black relative noScroll overflow-hidden">
         <Image
           src={IronMan}
           className="absolute flex top-0 left-0 object-cover object-center opacity-60 -z-20"

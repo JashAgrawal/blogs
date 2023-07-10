@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "49623353-a4aa-46d2-b417-ba419d90da8f",
+		"name": "appavengers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15143556"
+	},
+	"item": [
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"jash\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/api/create-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add draft",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"hi\",\r\n    \"body\":\"hi\",\r\n    \"userId\":\"64ab2c88abda1229bc333074\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/api/add-drafts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"add-drafts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "publish blog",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/publish-blog/64ab2bd1abda1229bc33306f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"publish-blog",
+						"64ab2bd1abda1229bc33306f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update draft",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"hisaggasgasgasag\",\r\n    \"body\":\"hiasfgasa\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/api/edit-drafts/64ab2bd1abda1229bc33306f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"edit-drafts",
+						"64ab2bd1abda1229bc33306f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get blog by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/get-blog-by-id/64ab2c9aabda1229bc333078",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"get-blog-by-id",
+						"64ab2c9aabda1229bc333078"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user drafts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/get-drafts/64ab2c88abda1229bc333074",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"get-drafts",
+						"64ab2c88abda1229bc333074"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/get-blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"get-blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete blog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/delete-blog/64ab2eec6c1eccf6abf8cb4e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"delete-blog",
+						"64ab2eec6c1eccf6abf8cb4e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
